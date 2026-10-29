@@ -30,3 +30,6 @@
 เอกสาร Google:
 - [Token model](https://developers.google.com/identity/oauth2/web/guides/use-token-model)
 - [Drive resumable uploads](https://developers.google.com/workspace/drive/api/guides/manage-uploads)
+
+## โฟลเดอร์หลัก
+ตั้งชื่อได้ในช่อง โฟลเดอร์หลักใน Google Drive (เริ่มต้น ARIN Videos) ระบบสร้างเมื่ออัปโหลดครั้งแรก และค้นหาโฟลเดอร์ที่แอปสร้างชื่อนี้ใน My Drive เพื่อใช้ซ้ำ ภายในเป็น ARIN Uploads วันเวลา → สินค้า → วิดีโอ ไฟล์อัปโหลดก่อนหน้านี้ไม่ได้ย้ายอัตโนมัติ
