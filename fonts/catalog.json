@@ -1,0 +1,50 @@
+[
+  {
+    "previewFamily": "ArinSubtitleDB0",
+    "variant": "Regular",
+    "file": "DB BrandVoice X.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB1",
+    "variant": "Bold",
+    "file": "DB BrandVoice X Bd.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB2",
+    "variant": "Bold Italic",
+    "file": "DB BrandVoice X BdIt.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB3",
+    "variant": "Italic",
+    "file": "DB BrandVoice X Italic.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB4",
+    "variant": "Light",
+    "file": "DB BrandVoice X Li.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB5",
+    "variant": "Light Italic",
+    "file": "DB BrandVoice X LiIt.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB6",
+    "variant": "Ultra Light",
+    "file": "DB BrandVoice X UltraLi.ttf"
+  },
+  {
+    "previewFamily": "ArinSubtitleDB7",
+    "variant": "Ultra Light Italic",
+    "file": "DB BrandVoice X UltraLiIt.ttf"
+  },
+  {
+    "alternateFile": "FC Speedcraft Italic [Non-commercial].otf",
+    "variant": "Italic",
+    "file": "FC Speedcraft Italic [Non-commercial].ttf",
+    "licenseLabel": "Non-commercial (ตามชื่อไฟล์; ต้องตรวจใบอนุญาตก่อนใช้งานเชิงพาณิชย์)",
+    "previewFamily": "ArinSubtitleDB8",
+    "family": "FC Speedcraft"
+  }
+]

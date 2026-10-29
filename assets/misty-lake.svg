@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1400" viewBox="0 0 1920 1400" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e6eff6"/><stop offset=".53" stop-color="#c1d4e2"/><stop offset="1" stop-color="#dce8ee"/></linearGradient><linearGradient id="water" x2="0" y2="1"><stop stop-color="#c6d9e3"/><stop offset="1" stop-color="#dce9f0"/></linearGradient><filter id="blur"><feGaussianBlur stdDeviation="12"/></filter><filter id="haze"><feGaussianBlur stdDeviation="30"/></filter></defs>
+<path fill="url(#sky)" d="M0 0h1920v1400H0z"/>
+<g filter="url(#blur)"><path fill="#b2c8d8" opacity=".6" d="M0 380 170 240 330 350 460 285 690 530 880 630 0 820z"/><path fill="#a2bdcf" opacity=".6" d="m1920 220-170 180-130-90-200 205-160-60-300 280 960 140z"/><path fill="#91adbf" opacity=".48" d="M0 600 130 460 270 540 390 470 660 730 0 850z"/><path fill="#7d9fb5" opacity=".4" d="m1920 440-170 120-100-40-210 180-210 70 690 100z"/></g>
+<path fill="url(#water)" d="M0 795q400-85 960-25t960 0v630H0z"/>
+<g filter="url(#haze)" fill="#f5f9fc" opacity=".7"><ellipse cx="920" cy="620" rx="990" ry="80"/><ellipse cx="1050" cy="820" rx="1100" ry="85"/><ellipse cx="350" cy="1050" rx="800" ry="130"/></g>
+<g stroke="#edf5fa" opacity=".35" stroke-width="3"><path d="M0 915h1920M140 960h1700M0 1035h1750M260 1120h1660M0 1250h1920"/></g>
+</svg>
