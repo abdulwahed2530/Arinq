@@ -4,7 +4,7 @@ const video=f=>/\.(mp4|mov|m4v|webm|mkv|avi|mts|m2ts)$/i.test(f.name);
 let selected=[],token='',expires=0,busy=false,uploaded=new Map(),gisPromise;
 const mode=()=>$('sourceMode').value;
 const status=t=>{$('sourceStatus').textContent=t};
-$('driveClientId').value=localStorage.getItem('arin-drive-client-id')||'';
+$('driveClientId').value=localStorage.getItem('arin-drive-client-id')||'777928250787-8feblmc1rmq29pu9to12tnl4iuklvlqn.apps.googleusercontent.com';
 $('driveClientId').onchange=()=>localStorage.setItem('arin-drive-client-id',$('driveClientId').value.trim());
 $('sourceMode').onchange=()=>{const cloud=mode()==='drive';$('driveConnection').hidden=!cloud;$('addBatch').textContent=cloud?'อัปโหลดเข้า Drive แล้วเพิ่มคิว':'เพิ่มรายการเหล่านี้เข้าคิว';$('batchRootPath').disabled=cloud;$('batchPathHelp').textContent=cloud?'ไม่ต้องกรอกพาธ ไฟล์จะถูกส่งเข้าโฟลเดอร์ ARIN Uploads ใน Google Drive ของคุณ':'พาธไม่บังคับสำหรับจัดคิว แต่ AutoGen ต้องมีพาธจริงก่อนเรนเดอร์ ไฟล์ไม่ได้ถูกอัปโหลดในโหมดนี้';};
 function gis(){if(window.google?.accounts?.oauth2)return Promise.resolve();if(!gisPromise)gisPromise=new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='https://accounts.google.com/gsi/client';s.onload=resolve;s.onerror=()=>{gisPromise=null;reject(Error('โหลดระบบ Google ไม่สำเร็จ ตรวจอินเทอร์เน็ตแล้วลองใหม่'))};document.head.append(s)});return gisPromise}
@@ -47,3 +47,4 @@ const originalPrompt=promptText;
 promptText=function(){const sources=state.jobs.filter(j=>j.sourceMode).map(j=>({product:j.product,mode:j.sourceMode,status:j.sourceStatus,folder:j.folder,files:j.sourceFiles||[]}));return originalPrompt()+(sources.length?'\n\nข้อมูลแหล่งวิดีโอ:\n'+JSON.stringify(sources,null,2)+'\nแหล่ง local-selection เป็นชื่อไฟล์อ้างอิง ไม่ใช่พาธจริง ห้ามเดาพาธหรือเรนเดอร์จนกว่าจะพบไฟล์จริง แหล่ง Google Drive ต้องดาวน์โหลด/ซิงก์ไฟล์ที่ได้รับอนุญาตเข้าถึงมายังเครื่อง AutoGen แล้วตรวจไฟล์ก่อนใช้ ลิงก์ไม่ทำให้ไฟล์เป็นสาธารณะ หากบัญชีเครื่องเรนเดอร์เข้าไม่ได้ให้ข้ามคิวและรายงาน ห้ามอ้างว่าไฟล์พร้อมเรนเดอร์เพียงเพราะอัปโหลดแล้ว':'')};
 $('sourceMode').onchange();
 })();
+
